@@ -78,6 +78,7 @@ form #submit {
 form #text {
     height: 200px;
 }
+
 /* For Header */
 
 header {  
@@ -218,10 +219,6 @@ h3 {
    font-weight: bolder;
 }
 
-ol {
-    text-align: left;
-}
-
 .text {
     display: flex;
     flex-direction: column;
@@ -237,6 +234,21 @@ h2, h3, h4, p {
 .mid p {
     width: 50%;
     text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.text li {
+    border:1px solid #b5716d;
+    background-color: #fce7d4;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 4px #b5716d;
 }
 
 /* For the Portfolio (mostly) */

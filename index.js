@@ -46,7 +46,7 @@ function displayForm() {
         const submit = document.createElement("input");
 
         form.setAttribute("method", "post");
-        form.setAttribute("action", "form.php");
+        form.setAttribute("action", "mailto:carinamariecarlos@gmail.com");
 
         nameBox.setAttribute("type", "text");
         emailBox.setAttribute("type", "text");
@@ -56,7 +56,7 @@ function displayForm() {
         nameBox.setAttribute("name", "name");
         emailBox.setAttribute("name", "email");
         textBox.setAttribute("name", "message");
-        submit.setAttribute("value", "Send Form");
+        submit.setAttribute("value", "Send");
 
         nameBox.setAttribute("id", "name");
         emailBox.setAttribute("id", "email");

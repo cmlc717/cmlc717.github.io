@@ -279,7 +279,7 @@ ul {
 }
 
 .withpic > img {
-    height: 30vh;
+    width: 40vw;
 }
 
 .proj p {
@@ -326,17 +326,14 @@ ul {
     }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 600px) {
     /* responsive to iphone xr */
     header {
         display: flex;
         flex-direction: column;
         border: 3px solid #b5716d;
         background-color: #fce7d4;
-    }
-
-    main {
-        border: 3px solid #b5716d;
+        width: 100%;
     }
 
     footer {
@@ -362,20 +359,25 @@ ul {
     .about_block>img {
         width: 30vw;
     }
-}
 
-@media screen and (max-width:1221px) {
-    /* to address formatting issues with smaller screens */
-
-    .withpic img {
-        width: 80vw;
-        height: 25vh;
+    .withpic {
+        flex-direction: column;
+    }
+    #welcome {
+        display: none;
+    }
+    #ask {
+        display: none;
     }
 
-    .proj {
-        white-space: wrap;
-        text-align: center;
+    .text ul {
+        flex-direction: column;
+    }
+
+    #portfolio-main h1 {
+        font-size: large;
     }
 }
+
 
 

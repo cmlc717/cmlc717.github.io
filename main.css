@@ -1,0 +1,369 @@
+/* For the elements on all pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #b5716d;
+    background-color: #ffeef5;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Welcome Page */
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    margin: 20vh;
+    margin-bottom: 30vh;
+}
+
+#jericho {
+    width: 300px;
+    border-radius: 50%;
+    margin: 2vh;
+}
+
+/* ask us */
+#ask {
+    text-align: center;
+    z-index: 999999;
+    background-color: transparent;
+}
+
+#ren {
+    border-radius: 50%;
+    height: 150px;
+    box-shadow: 1px 1px 5px #b5716d;;
+}
+
+#ask h4 {
+    border-radius: 15%;
+    background-color: white;
+    border: 5px solid #ed7272;
+    font-size: large;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #b5716d;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px #b5716d;
+    border: 5px solid #ed7272;
+    background-color: #ed7272;
+    padding: 15px;
+}
+
+form label {
+    background-color: #ed7272;
+    color: white;
+    padding: 10px;
+}
+
+form input {
+    background-color: white;
+}
+
+form #submit {
+    background-color: #b5716d;
+    color: white;
+    font-weight: bold;
+}
+
+form #text {
+    height: 200px;
+}
+/* For Header */
+
+header {  
+    font-weight: bold;   
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1em;    
+    position: sticky;
+    top: 0;
+    width:100%;
+    box-shadow: 0px 0px 5px #b5716d;
+    background-color: #fce7d4;
+    z-index: 99999;
+}
+
+header h1, header ul, header a, footer ul, footer a, footer li {
+    background-color: #fce7d4;
+}
+
+h1 {
+   white-space: nowrap;
+   color:	#ed7272;
+   text-shadow: 1px 1px 0.5px #b5716d;
+}
+
+.top {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+
+.top li {
+    margin: 1em;
+}
+
+.current {
+    border-bottom: 0.25em dotted #eaa6d1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top a:hover {
+    color: #eaa6d1;
+}
+
+/* For Main */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;;
+}
+
+main:nth-of-type(2), main:last-of-type {
+    margin-top: 100px;
+}
+
+/* For Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #b5716d;
+    background-color: #fce7d4;
+    z-index: 99999;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;    
+}
+
+.bottom li {
+    margin: 0.5em;
+    font-size: larger;    
+}
+
+.bottom li:first-of-type {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.bottom li:hover {
+    text-decoration: underline;
+    color: #eaa6d1;
+}
+
+/* For the home page */
+
+#self {
+    width: 25%;
+    margin: 3%
+}
+
+#quote {
+    width: 30%;
+    text-align: center;
+    margin: 3%;
+    font-size: 1.5em;
+}
+
+/* For About (mostly) */
+
+.about_block {
+    text-align: center;
+    margin: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+}    
+
+.about_block > img {
+    width: 20%;
+    height: 10%;
+    background-color: #ffeef5;
+    border-radius: 5%;
+}
+
+h2 {
+    border-bottom: 5px dotted #b5716d;
+    color: #eaa6d1;
+    text-shadow: 1px 1px 0.5px #b5716d;
+}
+
+h3 {
+   text-decoration: underline;
+   font-weight: bolder;
+}
+
+ol {
+    text-align: left;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+h2, h3, h4, p {
+    margin: 1em;
+}
+
+.mid p {
+    width: 50%;
+    text-align: center;
+}
+
+/* For the Portfolio (mostly) */
+
+.proj:nth-of-type(2n+1) {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.proj:nth-of-type(2n) {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.proj a, .mid a {
+    font-weight: bolder;
+    background-color: #f9fff0;
+}
+
+.withpic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em;
+}
+
+.withpic > img {
+    height: 30vh;
+}
+
+.proj p {
+    font-size: large;
+    font-style: italic;
+}
+
+/* For different screens */
+
+@media screen and (min-width: 1000px) {
+    /* ideally only for desktops */
+    .proj a:hover, .mid a:hover {
+        color:purple;
+    }
+    /* animations */
+    .box {
+        transform: translate(400%);
+        transition: transform 0.5s ease;
+    }
+    .show {
+        transform: translateX(0);
+    }
+    #ask {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 999999;
+        width: 150px;
+    }
+    #ren {
+        width: 100%;
+        margin: 0;
+    }
+    #ask h4 {
+        margin: 0;
+    }
+    #qa:hover{
+        opacity: .8;
+    }
+    form {
+        position: fixed;
+        bottom: 220px;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    /* responsive to iphone xr */
+    header {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #b5716d;
+        background-color: #fce7d4;
+    }
+
+    main {
+        border: 3px solid #b5716d;
+    }
+
+    footer {
+        border: 3px solid #b5716d;
+    }  
+
+    #self {
+        width: 50%
+    }
+
+    #quote {
+        width: 50%;
+    }
+
+    h1 {
+        white-space: nowrap;
+    }
+
+    .about_block {
+        flex-direction: column;
+    }
+
+    .about_block>img {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:1221px) {
+    /* to address formatting issues with smaller screens */
+
+    .withpic img {
+        width: 80vw;
+        height: 25vh;
+    }
+
+    .proj {
+        white-space: wrap;
+        text-align: center;
+    }
+}
+
+

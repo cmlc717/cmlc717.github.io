@@ -9,6 +9,7 @@ const aboutMain = document.getElementById("about-main");
 const portfolioMain = document.getElementById("portfolio-main"); 
 const askDiv = document.getElementById("ask");
 const qa = document.getElementById("qa");
+const header = document.querySelector("header"); 
 
 //Transitions
 let headers = [[home, homeHeader, homeMain], [about, aboutHeader, aboutMain], [portfolio, portfolioHeader, portfolioMain]];
@@ -87,3 +88,14 @@ function displayForm() {
         clicked=false;
     } 
 }
+
+//header transition
+window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 65) {
+        header.classList.add("active");
+    } else {
+        header.classList.remove("active");
+    }  
+});
